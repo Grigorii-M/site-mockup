@@ -12,69 +12,62 @@
   </head>
 
   <body>
-    <nav role="tablist">
-      <ul class="nav nav-pills flex-column flex-sm-row">
-        <li class="flex-sm-fill nav-item text-sm-center">
-          <a class="nav-link active" aria-current"page" href="#">RemoveThat</a>
-        </li>
-        <li class="flex-sm-fill nav-item text-sm-center">
-          <a class="nav-link" aria-current"page" href="#">Tools</a>
-        </li>
-        <li class="flex-sm-fill nav-item text-sm-center">
-          <a class="nav-link" aria-current"page" href="#">Academy</a>
-        </li>
-        <li class="flex-sm-fill nav-item text-sm-center">
-          <a class="nav-link" aria-current"page" href="#">Blog</a>
-        </li>
-        <li class="flex-sm-fill nav-item text-sm-center">
-          <a class="nav-link" aria-current"page" href="#">Help</a>
-        </li>
-        <li class="flex-sm-fill nav-item text-sm-center">
-          <a class="nav-link" aria-current"page" href="#">Dashboard</a>
-        </li>
-      </ul>
-    </nav>
-
-    <div>
-      <header>
-        <div>
-          <h1>Lorem ipsum <span>dolor<span> sit amet</h1>
-          <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
-          <div>
-            <div class="cta-link">
-              <a href="#">Get started, it’s free</a>
-            </div>
-            <div class="cta-link">
-              <form id="auth-google-frm">
-                  <input type="hidden" name="type" value="2" />
-                  <button title="Sign up with your Google account" type="submit">
-                      <img src="google.svg" alt="google icon">
-                  </button>
-              </form>
-            </div>
-            <div class="cta-link">
-                <form id="auth-facebook-frm">
-                    <input type="hidden" name="type" value="3" />
-                    <button title="Sign up with your Facebook account" type="submit">
-                        <img src="Facebook.svg" alt="facebook icon">
-                    </button>
-                </form>
-            </div>
-        </div>
-        <div>
-          <a href="https://www.youtube.com/watch?v=hzghsL-vLVc">Watch Video</a>
-          <img src="watch-video.svg">
-        </div>
+    <div class="container">
+      <header class="d-flex flex-wrap jusify-content-center py-3 mb-4 border-bottom">
+        <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none" aria-current"page" href="#"><span class="fs-3">RemoveThat</span></a>
+        <ul class="nav nav-pills flex-column flex-sm-row">
+          <li class="flex-sm-fill nav-item text-sm-center">
+            <a class="nav-link active" aria-current"page" href="#">Home</a>
+          </li>
+          <li class="flex-sm-fill nav-item text-sm-center">
+            <a class="nav-link" aria-current"page" href="#">Tools</a>
+          </li>
+          <li class="flex-sm-fill nav-item text-sm-center">
+            <a class="nav-link" aria-current"page" href="#">Academy</a>
+          </li>
+          <li class="flex-sm-fill nav-item text-sm-center">
+            <a class="nav-link" aria-current"page" href="#">Blog</a>
+          </li>
+          <li class="flex-sm-fill nav-item text-sm-center">
+            <a class="nav-link" aria-current"page" href="#">Help</a>
+          </li>
+          <li class="flex-sm-fill nav-item text-sm-center">
+            <a class="btn btn-outline-dark" aria-current"page" href="#">Dashboard</a>
+          </li>
+        </ul>
       </header>
 
-      <!-- Section 2 - Free Website Tools -->
-      <section>
-        <div>
-          <h1>Free Website Tools</h1>
-          <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+      <!-- Hero -->
+      <section class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <!-- TODO: put this button in the middle of the image -->
+            <a href="https://www.youtube.com/watch?v=hzghsL-vLVc">Watch Video</a>
+            <img src="watch-video.svg">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-3 fw-bold lh-1 mb-3">Lorem ipsum <span class="text-primary">dolor</span> sit amet</h1>
+            <p class="lead">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+            <div class="d-grid gap-2 d-md-flex jusify-content-md-start">
+              <button class="btn btn-primary">Get started, it’s free</button>
+              <button title="Sign up with your Google account" class="btn">
+                <img src="google.svg" alt="google icon">
+              </button>
+              <button title="Sign up with your Facebook account" class="btn">
+                <img src="Facebook.svg" alt="facebook icon">
+              </button>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <!-- Section 2 - Free Website Tools -->
+      <section class="container text-center">
         <div>
-          <ul>
+          <h1 class="display-4 fw-bold">Free Website Tools</h1>
+          <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+        <div class="d-flex align-items-start">
+          <ul class="nav flex-column nav-pills me-3" role="tablist" aria-orientation="vertical">
             <!-- Share Buttons Tab -->
             <li id="share-tab" class="active" href="#share-buttons">
               <?xml version="1.0" encoding="UTF-8"?>
@@ -92,7 +85,7 @@
                   </g>
                 </g>
               </svg>
-              <a href="#">Make it Shareable</a>
+              <button class="btn active" type="button" role="tab" data-bs-toggle="pill" data-bs-target="#make-it-shareable-tab" aria-controls="make-it-shareable-tab" aria-selected="true">Make it Shareable</button>
             </li>
             <!-- Follow Buttons Tab -->
             <li id="follow-tab" href="#follow-buttons">
@@ -113,7 +106,7 @@
                   </g>
                 </g>
               </svg>
-              <a href="#">Create Lifetime Fans</a>
+              <button class="btn" type="button" role="tab" data-bs-toggle="pill" data-bs-target="#create-lifetime-fans-tab" aria-controls="create-lifetime-fans-tab" aria-selected="false">Create Lifetime Fans</button>
             </li>
             <!-- Link Promotion Tab -->
             <li id="link-tab" href="#link-promotion">
@@ -134,7 +127,7 @@
                   </g>
                 </g>
               </svg>
-              <a href="#">Increase Traffic</a>
+              <button class="btn" type="button" role="tab" data-bs-toggle="pill" data-bs-target="#increase-traffic-tab" aria-controls="increase-traffic-tab" aria-selected="false">Increase Traffic</button>
             </li>
             <!-- List Building Tab -->
             <li id="list-tab" href="#list-building">
@@ -155,7 +148,7 @@
                   </g>
                 </g>
               </svg>
-              <a href="#">Grow Your User Base</a>
+              <button class="btn" type="button" role="tab" data-bs-toggle="pill" data-bs-target="#grow-user-base-tab" aria-controls="grow-user-base-tab" aria-selected="false">Grow Your User Base</button>
             </li>
             <!-- Related Posts Tab -->
             <li id="related-tab" href="#related-posts">
@@ -176,49 +169,48 @@
                   </g>
                 </g>
               </svg>
-              <a href="#">Reduce Bounce Rate</a>
+              <button class="btn" type="button" role="tab" data-bs-toggle="pill" data-bs-target="#reduce-bounce-tab" aria-controls="reduce-bounce-tab" aria-selected="false">Reduce Bounce Rate</button>
             </li>
           </ul>
-        </div>
         <!-- Tool Modules -->
-        <div>
-          <div id="share-buttons">
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="make-it-shareable-tab" role="tabpanel" tabindex="0">
             <h2>Share Buttons</h2>
             <p>The easiest way to spread your content online.</p>
             <aside>
-              <a href="#">Get Started</a>
+              <a class="btn btn-primary" href="#">Don't get Started</a>
               <a href="#">Don't learn More</a>
             </aside>
           </div>
-          <div id="follow-buttons">
+          <div class="tab-pane fade" id="create-lifetime-fans-tab" role="tabpanel" tabindex="0">
             <h2>Follow Buttons</h2>
             <p>Build your audience, one fan at a time.</p>
             <aside>
-              <a href="#">Get Started</a>
+              <a class="btn btn-primary" href="#">Don't get Started</a>
               <a href="#">Don't learn More</a>
             </aside>
           </div>
-          <div id="link-promotion">
+          <div class="tab-pane fade" id="increase-traffic-tab" role="tabpanel" tabindex="0">
             <h2>Link Promotion</h2>
             <p>Create an enticing call to action and drive visitors to any page you want to promote.</p>
             <aside>
-              <a href="#">Get Started</a>
+              <a class="btn btn-primary" href="#">Don't get Started</a>
               <a href="#">Don't learn More</a>
             </aside>
           </div>
-          <div id="list-building">
+          <div class="tab-pane fade" id="grow-user-base-tab" role="tabpanel" tabindex="0">
             <h2>List Building</h2>
             <p>Connect your email backend, collecting email addresses in a snap.</p>
             <aside>
-              <a href="#">Get Started</a>
+              <a class="btn btn-primary" href="#">Don't get Started</a>
               <a href="#">Don't learn More</a>
             </aside>
           </div>
-          <div id="related-posts">
+          <div class="tab-pane fade" id="reduce-bounce-tab" role="tabpanel" tabindex="0">
             <h2>Related Posts</h2>
             <p>Engage readers with your most popular content catered to their interests.</p>
             <aside>
-              <a href="#">Get Started</a>
+              <a class="btn btn-primary" href="#">Don't get Started</a>
               <a href="#">Don't learn More</a>
             </aside>
           </div>
@@ -227,29 +219,26 @@
         
       <!-- Section 3 - RemoveThat Free & Video -->
       <section>
-        <div>
-          <div>
+        <div class="px-4 pt-5">
+          <div class="display-4 fw-bold">
             <h2>Now Avaliable on your Fridge</h2>
             <p>Buy Skyrim. NOW!</p>
           </div>
-          <div>
-            <div>
-              <a href="https://www.youtube.com/watch?v=hzghsL-vLVc">
-                <!-- TODO: This should describe video container -->
-              </a>
-            </div>
-            <div>
-              
-            </div>
-            <div>
-              <h3>Lorem ipsum dolor</h3>
-              <ul>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Lorem ipsum dolor sit amet</li>
-              </ul>
-              <a href="https://www.youtube.com/watch?v=hzghsL-vLVc">Don't learn more</a>
+          <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-lg-6">
+                <h3>Lorem ipsum dolor</h3>
+                <ul>
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Lorem ipsum dolor sit amet</li>
+                  <li>Lorem ipsum dolor sit amet</li>
+                </ul>
+                <a href="https://www.youtube.com/watch?v=hzghsL-vLVc">Don't learn more</a>
+              </div>
+              <div class="col-10 col-sm-8 col-lg-6">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen autoplay=1></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -257,21 +246,23 @@
         
       <!-- Section 4 - Info & Internal Links -->
       <section>
-        <div>
-          <div>
-            <h4>Lorem ipsum dolor sit amet</h4>
-            <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
-            <a href="#">Don't learn more</a>
-          </div>
-          <div>
-            <h4>Lorem ipsum dolor sit amet</h4>
-            <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
-            <a href="#">Don't learn more</a>
-          </div>
-          <div>
-            <h4>Lorem ipsum dolor sit amet</h4>
-            <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
-            <a href="#">Don't learn more</a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <h4>Lorem ipsum dolor sit amet</h4>
+              <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+              <a class="btn btn-outline-primary" href="#">Don't learn more</a>
+            </div>
+            <div class="col">
+              <h4>Lorem ipsum dolor sit amet</h4>
+              <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+              <a class="btn btn-outline-primary" href="#">Don't learn more</a>
+            </div>
+            <div class="col">
+              <h4>Lorem ipsum dolor sit amet</h4>
+              <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+              <a class="btn btn-outline-primary" href="#">Don't learn more</a>
+            </div>
           </div>
         </div>
       </section>
@@ -303,20 +294,28 @@
 
       <!-- Section 6 - Questions / Learn More -->
       <section>
-        <div>
-          <h3>Have Questions?<br>Too bad :( We will not answer</h3>
-          <p>Don't visit RemoveThat Academy to learn tips & tricks from some noobs to help drive traffic away from your site.</p>
-          <a href="#">Don't learn more</a>
+        <div class="px-4 py-5 my-5 text-center">
+          <h1 class="display-4 fw-bold">Have Questions?</h1>
+          <div>
+            <h2>Too bad :(<br>We will not answer</h2>
+          </div>
+          <p class="lead mb-4">Don't visit RemoveThat Academy to learn tips & tricks from some noobs to help drive traffic away from your site.</p>
+          <a class="btn btn-primary" href="#">Don't learn more</a>
         </div>
       </section>
 
       <footer>
-        <div>
-          <p href="#">Sell My Personal Information</p>
-          <p href="#">Opt In to Targeted Advertising</p>
+        <div class="d-flex flex-wrap jusify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-muted">Made in educational purposes</p>
+          <ul class="nav col-md-4 jusify-content-end">
+            <li class="nav-item">
+              <a class="nav-link px-2 text-muted" href="#">Sell My Personal Information</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2 text-muted" href="#">Opt In to Targeted Advertising</a>
+            </li>
+          </ul>
           <br>
-          <p>
-          <p>Made in educational purposes</p>
         </div>
       </footer>
     </div>
